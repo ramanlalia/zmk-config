@@ -27,37 +27,37 @@
                 
        		default_layer {
 		bindings = <
-		&kp Q    &kp L    &kp CMMA    &kp P    &to 3 					    &to 2    &kp F    &kp U    &kp D    &kp K 
+		&kp Q    &kp L    &kp CMMA    &kp P    &sl 3 					    &sl 2    &kp F    &kp U    &kp D    &kp K 
 		&kp A    &kp R    &kp E       &kp N    &kp B 			            &kp G    &kp S    &kp I    &kp T    &kp O
 		&kp Z    &kp W    &kp DOT     &kp H    &kp J				        &kp V    &kp C    &kp Y    &kp M    &kp X
-          				              &trans   &to 0  				        &mo 1     &trans 
+          				              &trans   &mo 1  				        &mo 2     &trans 
 		>;
 		};
 
-       		left_layer {
-		bindings = <
-		&kp F2      &kp F3        &kp F4      &kp F5      &kp F6		        &kp F7     &kp F8       &kp F9        &kp F10     &kp F11 
-		&sk LCTL    &sk LSHIFT    &sk LGUI    &sk LALT    &kp TAB 		        &kp ESC    &kp SPC      &kp RETURN    &kp BSPC    &kp DEL 
-		&kp F1      &kp CAPS      &kp PG_DN      &kp LEFT    &kp DOWN 	            &kp UP     &kp RIGHT    &kp PG_UP     &kp INS     &kp F12 
-					                          &trans      &to 0  		        &mo 1      &trans 
-		>;
-		};
+
 		
 		right_layer {
 		bindings = <
         &kp BANG  &kp ATSN &kp HASH  &kp DLLR  &kp PRCT    			&kp CRRT  &kp AMPS &kp KMLT &kp LPRN &kp RPRN 
 		&kp TILDE  &kp QMARK  &kp FSLH  &kp COLN  &kp SCLN 			&kp MINUS &kp KP_EQUAL  &kp LBRC  &kp RBRC   &kp UNDER
 		&kp GRAVE  &kp KPLS &kp LBKT &kp RBKT   &kp BSLH    			&kp SQT &kp DQT &kp LT  &kp GT &kp PIPE
-					  &trans  &to 0    				&mo 1  &trans 
+					  &trans  &mo 1                                  	&mo 2  &trans 
 		>;
 		};	
-		
+       		left_layer {
+		bindings = <
+		&kp F2      &kp F3        &kp F4      &kp F5      &kp F6		        &kp F7     &kp F8       &kp F9        &kp F10     &kp F11 
+		&sk LCTL    &sk LSHIFT    &sk LGUI    &sk LALT    &kp TAB 		        &kp ESC    &kp SPC      &kp RETURN    &kp BSPC    &kp DEL 
+		&kp F1      &kp CAPS      &kp PG_DN      &kp LEFT    &kp DOWN 	            &kp UP     &kp RIGHT    &kp PG_UP     &kp INS     &kp F12 
+					                          &trans      &mo 3  		        &mo 2      &trans 
+		>;
+		};		
         num_layer {
 		bindings = <
 		&kp K_VOL_DN  &kp K_VOL_UP    &kp K_PREV    &kp K_NEXT    &kp HOME 			&kp END &kp NUM_7   &kp NUM_8   &kp NUM_9  &kp K_PP
 		&kp FSLH &kp KMLT &kp KPLS &kp MINUS &kp KP_EQUAL  						&kp RETURN &kp NUM_4  &kp NUM_5 &kp NUM_6 &kp NUM_0 
 		&bt BT_CLR  &bt BT_NXT &bt BT_PRV &out OUT_TOG &kp PG_DN   				&kp PG_UP &kp NUM_1  &kp NUM_2  &kp NUM_3 &kp BSPC   
-					 &trans &to 0  					&mo 1 &trans 
+					 &trans &trans					&trans &trans 
 		>;
 		};
         
