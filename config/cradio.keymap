@@ -7,6 +7,8 @@
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/bt.h>
+#include <dt-bindings/zmk/outputs.h>
+
 
 
 &mt {
@@ -17,46 +19,7 @@
 / { 
 
     combos {
-        compatible = "zmk,combos";
-        combo_esc {
-            timeout-ms = <50>;
-            key-positions = <0 1>;
-            bindings = <&kp ESC>;
-        };
-        
-         combo_tab {
-            timeout-ms = <50>;
-            key-positions = <10 11>;
-            bindings = <&kp TAB>;
-        };
-        
-            combo_ralt {
-            timeout-ms = <50>;
-            key-positions = <17 16>;
-            bindings = <&kp RALT>;
-        };
-        
-                    combo_lalt {
-            timeout-ms = <50>;
-            key-positions = <11 12>;
-            bindings = <&kp LALT>;
-        };
-        
-                           combo_lgui {
-            timeout-ms = <50>;
-            key-positions = <12 13>;
-            bindings = <&kp LGUI>;
-        };
-        
-        
-           combo_rgui {
-            timeout-ms = <50>;
-            key-positions = <17 18>;
-            bindings = <&kp RGUI>;
-        };
-        
-
-        
+        compatible = "zmk,combos";        
     };
 
         keymap {
@@ -64,39 +27,39 @@
                 
        		default_layer {
 		bindings = <
-		&kp Q &kp W &kp E &kp R &kp T 						&kp Y &kp U  &kp I    &kp O   &kp P 
-		&kp A &kp S &kp D &kp F &kp G 			        	        &kp H &kp J &kp K &kp L &kp QUOT
-		&mt LSFT Z &kp X &kp C &kp V &kp B				        &kp N &kp M  &kp CMMA &kp DOT &mt LSFT RET
-          				&mo 1 &kp LCTL  				&kp SPC &mo 2 
+		&kp Q    &kp L    &kp CMMA    &kp P    &to 4 					    &to 2    &kp F    &kp U    &kp D    &kp K 
+		&kp A    &kp R    &kp E       &kp N    &kp B 			            &kp G    &kp S    &kp I    &kp T    &kp O
+		&kp Z    &kp W    &kp DOT     &kp H    &kp J				        &kp V    &kp C    &kp Y    &kp M    &kp X
+          				              &trans   &to 0  				        &sl 1     &trans 
 		>;
 		};
 
        		left_layer {
 		bindings = <
-		&kp NUM_1  &kp NUM_2    &kp NUM_3    &kp NUM_4    &kp NUM_5		&kp NUM_6 &kp NUM_7 &kp NUM_8 &kp NUM_9 &kp NUM_0 
-		&kp TAB    &kp LC(S)    &kp DQT      &kp PIPE2     &kp HASH 		&kp MINUS &kp EQL  &kp LBKT &kp RBKT  &kp DEL 
-		&kp ESC    &kp TILDE 	&kp NON_US_BSLH &kp NON_US_HASH  &kp TILDE2 	&kp MINUS &kp GRAVE &kp LBKT &kp RBKT  &kp DEL 
-					    &mo 1  &kp LGUI  					&kp RGUI &mo 2 
+		&kp F2      &kp F3        &kp F4      &kp F5      &kp F6		        &kp F7     &kp F8       &kp F9        &kp F10     &kp F11 
+		&sk LCTL    &sk LSHIFT    &sk LGUI    &sk LALT    &kp CAPS 		        &kp ESC    &kp SPC      &kp RETURN    &kp BSPC    &kp DEL 
+		&kp F1      &kp SLCK      &PG_DN      &kp LEFT    &kp DOWN 	            &kp UP     &kp RIGHT    &kp PG_UP     &kp INS     &kp F12 
+					                          &trans      &to 0  		        &mo 1      &trans 
 		>;
 		};
 		
 		right_layer {
 		bindings = <
-		&kp BANG  &kp ATSN &kp HASH  &kp DLLR  &kp PRCT    			&kp CRRT  &kp AMPS &kp KMLT &kp LPRN &kp RPRN 
-		&kp HASH  &kp QMARK  &kp FSLH  &kp COLN  &kp SCLN 			&kp MINUS &kp KP_EQUAL  &kp LBRC  &kp RBRC   &kp BKSP
-		&kp LSFT  &kp KPLS &kp LBKT &kp RBKT   &kp BSLH    			&kp UNDER &kp LEFT &kp DOWN &kp UP  &kp RIGHT
-					  &mo 3 &kp LCTL  				&kp SPC  &mo 2 
+		&trans   &kp ATSN &kp HASH  &kp DLLR  &kp PRCT    			&kp KMLT &kp LT &kp GT &kp CRRT &trans
+		&kp GRAVE   &kp BANG  &kp QMARK  &kp COLN  &kp SCLN 			&kp LBRC &kp RBRC  &kp LPRN  &kp RPRN   &kp AMPS
+		&trans  &kp PIPE  &kp LBKT &kp RBKT   &kp BSLH    			&kp UNDER &kp SQT &kp DQT &kp TILDE &trans
+					  &trans  &to 0    				&mo 1  &trans 
 		>;
 		};	
 		
-		tri_layer {
+        num_layer {
 		bindings = <
-		&kp NUM_1  &kp NUM_2    &kp NUM_3    &kp NUM_4    &kp NUM_5 			&trans &trans   &trans   &trans  &trans
-		&kp F1 &kp F2 &kp F3 &kp F4 &kp F5  						&trans &kp PG_UP  &kp K_VOL_UP &kp K_MUTE &trans 
-		&bt BT_CLR  &bt BT_NXT &bt BT_PRV &kp F6 &kp F7   				&trans &kp PG_DN  &kp K_VOL_DN  &trans &trans   
-					 &trans &trans  					&trans &trans 
+		&kp K_VOL_DN  &kp K_VOL_UP    &kp K_PREV    &kp K_NEXT    &kp HOME 			&kp END &kp NUM_7   &kp NUM_8   &kp NUM_9  &kp K_PP
+		&kp FSLH &kp KMLT &kp KPLS &kp MINUS &kp KP_EQUAL  						&kp RETURN &kp NUM_4  &kp NUM_5 &kp NUM_6 &kp NUM_0 
+		&bt BT_CLR  &bt BT_NXT &bt BT_PRV &out OUT_TOG &kp PG_DN   				&kp PG_UP &kp NUM_1  &kp NUM_2  &kp NUM_3 &kp BSPC   
+					 &trans &to 0  					&mo 1 &trans 
 		>;
-		};	
+		};
         
 	};
 };
