@@ -37,17 +37,17 @@
        		left_layer {
 		bindings = <
 		&kp F2      &kp F3        &kp F4      &kp F5      &kp F6		        &kp F7     &kp F8       &kp F9        &kp F10     &kp F11 
-		&sk LCTL    &sk LSHIFT    &sk LGUI    &sk LALT    &kp CAPS 		        &kp ESC    &kp SPC      &kp RETURN    &kp BSPC    &kp DEL 
-		&kp F1      &kp SLCK      &PG_DN      &kp LEFT    &kp DOWN 	            &kp UP     &kp RIGHT    &kp PG_UP     &kp INS     &kp F12 
+		&sk LCTL    &sk LSHIFT    &sk LGUI    &sk LALT    &kp TAB 		        &kp ESC    &kp SPC      &kp RETURN    &kp BSPC    &kp DEL 
+		&kp F1      &kp CAPS      &kp PG_DN      &kp LEFT    &kp DOWN 	            &kp UP     &kp RIGHT    &kp PG_UP     &kp INS     &kp F12 
 					                          &trans      &to 0  		        &mo 1      &trans 
 		>;
 		};
 		
 		right_layer {
 		bindings = <
-		&trans   &kp ATSN &kp HASH  &kp DLLR  &kp PRCT    			&kp KMLT &kp LT &kp GT &kp CRRT &trans
-		&kp GRAVE   &kp BANG  &kp QMARK  &kp COLN  &kp SCLN 			&kp LBRC &kp RBRC  &kp LPRN  &kp RPRN   &kp AMPS
-		&trans  &kp PIPE  &kp LBKT &kp RBKT   &kp BSLH    			&kp UNDER &kp SQT &kp DQT &kp TILDE &trans
+        &kp BANG  &kp ATSN &kp HASH  &kp DLLR  &kp PRCT    			&kp CRRT  &kp AMPS &kp KMLT &kp LPRN &kp RPRN 
+		&kp TILDE  &kp QMARK  &kp FSLH  &kp COLN  &kp SCLN 			&kp MINUS &kp KP_EQUAL  &kp LBRC  &kp RBRC   &kp UNDER
+		&kp GRAVE  &kp KPLS &kp LBKT &kp RBKT   &kp BSLH    			&kp SQT &kp DQT &kp LT  &kp GT &kp PIPE
 					  &trans  &to 0    				&mo 1  &trans 
 		>;
 		};	
