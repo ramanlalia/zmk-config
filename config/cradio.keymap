@@ -54,9 +54,9 @@
 		};		
         num_layer {
 		bindings = <
-		&kp LEFT  &kp DOWN    &kp UP    &kp RIGHT    &kp ESC 			&kp BSPC &kp NUM_7   &kp NUM_8   &kp NUM_9  &kp K_PP
-		&mt LCTL FSLH  &mt LSHIFT  KMLT &mt LGUI MINUS  &mt LALT KPLS &kp KP_EQUAL  						&kp RETURN  &mt LALT NUM_4  &mt LGUI NUM_5  &mt LSHIFT  NUM_6 &mt LCTL NUM_0 
-		&bt PRCT  &bt CRRT &bt LPRN &kp RPRN &kp DOT   				&kp DEL     &kp NUM_1  &kp NUM_2  &kp NUM_3 &mo 4   
+		&kp LEFT  &kp DOWN    &kp UP    &kp RIGHT    &kp ESC 			&kp BSPC &kp NUM_7   &kp NUM_8   &kp NUM_9  &kp BANG
+		&mt LCTL FSLH   &mt LSHIFT KMLT &mt LGUI MINUS  &mt LALT KPLS &kp KP_EQUAL  						&kp RETURN  &mt LALT NUM_4  &mt LGUI NUM_5  &mt LSHIFT  NUM_6 &mt LCTL NUM_0 
+		&kp PRCT  &kp CRRT &kp LPRN &kp RPRN &kp DOT   				&kp DEL     &kp NUM_1  &kp NUM_2  &kp NUM_3 &mo 4   
 					 &trans &trans					&trans &trans 
 		>;
 		};
