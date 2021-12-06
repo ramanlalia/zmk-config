@@ -28,7 +28,7 @@
        		default_layer {
 		bindings = <
 		&kp Q    &kp L    &mt SQT CMMA    &kp P    &kp B 					    &kp G    &kp F    &kp U    &kp D    &kp K 
-		&mt LCTL A    &mt LSHIFT R    &mt LGUI E       &mt LALT N    &kp BSPC 			            &kp SPC    &mt LALT S    &mt LGUI I    &mt LSHIFT T    &mt LCTL O
+		&kp A    &kp R    &kp E       &kp N    &kp BSPC 			            &kp SPC    &kp S    &kp I    &kp T    &kp O
 		&kp Z    &kp W    &mt QMARK DOT     &kp H    &kp J				        &kp C    &kp V    &kp X    &kp Y    &kp M
           				              &trans   &mo 1  				        &mo 2     &trans 
 		>;
@@ -43,7 +43,7 @@
 		&kp GRAVE  &kp KPLS &kp LBKT &kp RBKT   &kp BSLH    			&kp SQT &kp DQT &kp LT  &kp GT &kp PIPE
 					  &trans  &mo 1                                  	&mo 3  &trans 
 		>; 
-		};	
+		};
 
        		left_layer {
 		bindings = <
