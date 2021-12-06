@@ -12,7 +12,7 @@
 
 
 &mt {
-   flavor = "balanced";
+   flavor = "tap-preferred";
    // tapping_term_ms = <200>;
 };
 
@@ -39,16 +39,15 @@
 		right_layer {
 		bindings = <
         &kp BANG  &kp ATSN &kp HASH  &kp DLLR  &kp PRCT    			&kp CRRT  &kp AMPS &kp KMLT &kp LPRN &kp RPRN 
-		&mt LCTL TILDE   &mt LSHIFT QMARK  &mt LGUI FSLH   &mt LALT COLN  &kp SCLN 			&kp MINUS  &mt LALT KP_EQUAL  &mt LGUI LBRC   &mt LSHIFT RBRC   &mt LCTL UNDER
+		&mt LCTL TILDE   &mt LSHIFT QMARK  &mt LGUI FSLH   &mt LALT COLN  &kp SCLN 			&kp MINUS  &mt LALT EQUAL  &mt LGUI LBRC   &mt LSHIFT RBRC   &mt LCTL UNDER
 		&kp GRAVE  &kp KPLS &kp LBKT &kp RBKT   &kp BSLH    			&kp SQT &kp DQT &kp LT  &kp GT &kp PIPE
 					  &trans  &mo 1                                  	&mo 3  &trans 
 		>; 
 		};	
 
-        // need HOME and END keys in here
        		left_layer {
 		bindings = <
-        &kp F1      &kp HOME        &kp PG_DN      &caps_word      &kp ESC		        &kp  TAB    &kp DEL       &kp PG_UP        &kp END   &kp F12 
+        &kp F1      &kp F12        &kp DEL      &caps_word      &kp ESC		        &kp  TAB    &kp HOME       &kp PG_DOWN        &kp PG_UP   &kp END 
 		&sk LCTL    &sk LSHIFT    &sk LGUI     &sk LALT    &kp  CAPS		        &kp RETURN    &kp LEFT      &kp DOWN    &kp UP    &kp RIGHT 
 		&kp F2      &kp F3      &kp F4      &kp F5    &kp F6 	            &kp F7     &kp F8    &kp F9     &kp F10     &kp F11 
 					                          &trans      &mo 3  		        &mo 2      &trans 
@@ -56,21 +55,11 @@
 		};		
         num_layer {
 		bindings = <
-		&kp LEFT  &kp DOWN    &kp UP    &kp RIGHT    &kp ESC 			&kp BSPC &kp NUM_7   &kp NUM_8   &kp NUM_9  &kp BANG
-		&mt LCTL FSLH   &mt LSHIFT KMLT &mt LGUI MINUS  &mt LALT KPLS &kp KP_EQUAL  						&kp RETURN  &mt LALT NUM_4  &mt LGUI NUM_5  &mt LSHIFT  NUM_6 &mt LCTL NUM_0 
-		&kp PRCT  &kp CRRT &kp LPRN &kp RPRN &kp DOT   				&kp DEL     &kp NUM_1  &kp NUM_2  &kp NUM_3 &mo 4   
+		&kp NUM_1  &kp NUM_2    &kp NUM_3    &kp NUM_4    &kp NUM_5 			&kp NUM_6 &kp NUM_7   &kp NUM_8   &kp NUM_9  &kp NUM_0
+		&mt LCTL FSLH   &mt LSHIFT KMLT &mt LGUI MINUS  &mt LALT KPLS &kp KP_EQUAL  						&kp DOT  &mt LALT LEFT  &mt LGUI DOWN  &mt LSHIFT UP &mt LCTL RIGHT 
+		&bt BT_CLR  &bt BT_NXT &bt BT_PRV &out OUT_TOG &kp C_MUTE  				&kp C_VOL_DN  &kp C_VOL_UP    &kp C_PREV    &kp C_NEXT    &kp C_PP   
 					 &trans &trans					&trans &trans 
 		>;
 		};
-
-        app_layer {
-		bindings = <
-		&kp C_VOL_DN  &kp C_VOL_UP    &kp K_PREV    &kp K_NEXT    &kp C_PP 			&kp C_AL_CHAT &kp K_WWW   &kp C_AL_MY_COMPUTER   &kp C_AL_IM  &trans
-		&kp C_AL_PRESENTATION  &kp C_AL_WORD &kp C_AL_TEXT_EDITOR &kp C_AL_SHEET &kp C_AL_MUSIC  						&kp C_AL_NEXT_TASK &kp K_CALC  &kp C_AL_MAIL &kp C_AL_CAL &trans
-		&bt BT_CLR  &bt BT_NXT &bt BT_PRV &out OUT_TOG &kp C_AL_FILES   				&kp C_AL_PREV_TASK     &kp C_AL_SELECT_TASK  &kp C_AL_JOURNAL  &kp NUM_3 &trans   
-					 &trans &trans					&trans &trans 
-		>;
-		};
-        
 	};
 };
