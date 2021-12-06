@@ -56,7 +56,7 @@
         num_layer {
 		bindings = <
 		&kp NUM_1  &kp NUM_2    &kp NUM_3    &kp NUM_4    &kp NUM_5 			&kp NUM_6 &kp NUM_7   &kp NUM_8   &kp NUM_9  &kp NUM_0
-		&mt LCTL FSLH   &mt LSHIFT KMLT &mt LGUI MINUS  &mt LALT KPLS &kp KP_EQUAL  						&kp DOT  &mt LALT LEFT  &mt LGUI DOWN  &mt LSHIFT UP &mt LCTL RIGHT 
+		&mt LCTL FSLH   &mt LSHIFT KMLT &mt LGUI MINUS  &mt LALT KPLS &kp EQUAL  						&kp DOT  &mt LALT LEFT  &mt LGUI DOWN  &mt LSHIFT UP &mt LCTL RIGHT 
 		&bt BT_CLR  &bt BT_NXT &bt BT_PRV &out OUT_TOG &kp C_MUTE  				&kp C_VOL_DN  &kp C_VOL_UP    &kp C_PREV    &kp C_NEXT    &kp C_PP   
 					 &trans &trans					&trans &trans 
 		>;
