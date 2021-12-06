@@ -12,7 +12,7 @@
 
 
 &mt {
-  //  flavor = "tap-preferred";
+   flavor = "balanced";
    // tapping_term_ms = <200>;
 };
 
@@ -27,14 +27,14 @@
                 
        		default_layer {
 		bindings = <
-		&kp Q    &kp L    &mt SQT CMMA    &kp P    &kp SPC 					    &kp BSPC    &kp F    &kp U    &kp D    &kp K 
-		&mt LCTL A    &mt LSHIFT R    &mt LGUI E       &mt LALT N    &kp B 			            &kp G    &mt LALT S    &mt LGUI I    &mt LSHIFT T    &mt LCTL O
+		&kp Q    &kp L    &mt SQT CMMA    &kp P    &kp B 					    &kp G    &kp F    &kp U    &kp D    &kp K 
+		&mt LCTL A    &mt LSHIFT R    &mt LGUI E       &mt LALT N    &kp BSPC 			            &kp SPC    &mt LALT S    &mt LGUI I    &mt LSHIFT T    &mt LCTL O
 		&kp Z    &kp W    &mt QMARK DOT     &kp H    &kp J				        &kp C    &kp V    &kp X    &kp Y    &kp M
           				              &trans   &mo 1  				        &mo 2     &trans 
 		>;
 		};
 
-
+        
 		
 		right_layer {
 		bindings = <
@@ -44,9 +44,11 @@
 					  &trans  &mo 1                                  	&mo 3  &trans 
 		>; 
 		};	
+
+        // need HOME and END keys in here
        		left_layer {
 		bindings = <
-        &kp F1      &kp INS        &kp PG_DN      &caps_word      &kp ESC		        &kp  ESC    &kp TAB       &kp PG_UP        &kp DEL     &kp F12 
+        &kp F1      &kp HOME        &kp PG_DN      &caps_word      &kp ESC		        &kp  TAB    &kp DEL       &kp PG_UP        &kp END   &kp F12 
 		&sk LCTL    &sk LSHIFT    &sk LGUI     &sk LALT    &kp  CAPS		        &kp RETURN    &kp LEFT      &kp DOWN    &kp UP    &kp RIGHT 
 		&kp F2      &kp F3      &kp F4      &kp F5    &kp F6 	            &kp F7     &kp F8    &kp F9     &kp F10     &kp F11 
 					                          &trans      &mo 3  		        &mo 2      &trans 
@@ -63,7 +65,7 @@
 
         app_layer {
 		bindings = <
-		&kp K_VOL_DN  &kp K_VOL_UP    &kp K_PREV    &kp K_NEXT    &kp K_PP 			&kp C_AL_CHAT &kp K_WWW   &kp C_AL_MY_COMPUTER   &kp C_AL_IM  &trans
+		&kp C_VOL_DN  &kp C_VOL_UP    &kp K_PREV    &kp K_NEXT    &kp C_PP 			&kp C_AL_CHAT &kp K_WWW   &kp C_AL_MY_COMPUTER   &kp C_AL_IM  &trans
 		&kp C_AL_PRESENTATION  &kp C_AL_WORD &kp C_AL_TEXT_EDITOR &kp C_AL_SHEET &kp C_AL_MUSIC  						&kp C_AL_NEXT_TASK &kp K_CALC  &kp C_AL_MAIL &kp C_AL_CAL &trans
 		&bt BT_CLR  &bt BT_NXT &bt BT_PRV &out OUT_TOG &kp C_AL_FILES   				&kp C_AL_PREV_TASK     &kp C_AL_SELECT_TASK  &kp C_AL_JOURNAL  &kp NUM_3 &trans   
 					 &trans &trans					&trans &trans 
